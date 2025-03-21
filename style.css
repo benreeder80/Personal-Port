@@ -24,3 +24,50 @@ header {
     visibility: hidden;
 }
 
+.stAlert, .stInfo, .stAlert > div, .stInfo > div {
+    background-color: #D4EDDA !important;
+    color: black !important;
+}
+
+.stApp {
+    background-color: white;
+}
+
+body, p, span, label, li, a, h1, h2, h3, h4, h5, h6, .st-bb, .st-at, .st-ae, .st-bq, .st-br, .st-bs, .st-bt {
+    color: black !important;
+}
+
+/* Make only project links and social media links blue */
+div.stMarkdown a[href*="github.com"], 
+div.stMarkdown a[href*="linkedin.com"], 
+div[data-testid="stHorizontalBlock"] div:nth-child(3) a,
+div[data-testid="stHorizontalBlock"] div:nth-child(3) p {
+    color: #0066cc !important;
+    text-decoration: underline !important;
+}
+
+/* Keep navigation links black */
+.navbar a, nav a, .navbar-nav a, .nav-link, .navbar-brand, a.navbar-brand {
+    color: black !important;
+    text-decoration: none !important;
+}
+
+/* Specifically target "Ben Reeder" in the navbar */
+.navbar-brand[href*="linkedin.com"], nav a[href*="linkedin.com"]:first-child {
+    color: black !important;
+    text-decoration: none !important;
+}
+
+html, body, .stApp, .main, .block-container, div, section, 
+[data-testid="stAppViewContainer"], [data-testid="stVerticalBlock"] {
+    scrollbar-width: auto !important; /* For Firefox */
+    scrollbar-color: #6c757d #ffffff !important; /* For Firefox */
+}
+
+code, .st-ae, .st-af, pre, .codehilite {
+    background-color:  RGB(245, 245, 245) !important;
+    color: #0077B6 !important;
+    border: 1px solid #e0e0e0 !important;
+    border-radius: 4px !important;
+    padding: 2px 5px !important;
+}
