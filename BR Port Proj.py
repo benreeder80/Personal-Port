@@ -26,7 +26,7 @@ st.info('''
 st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">', unsafe_allow_html=True)
 
 st.markdown("""
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #CC6666;">
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #D4EDDA;">
   <a class="navbar-brand" href="https://www.linkedin.com/in/ben-reeder80/" target="_blank">Ben Reeder</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -137,6 +137,48 @@ txt4('Proj 2 Name', 'Proj 2 Description', 'https://github.com/benreeder80')
 txt4('Proj 3 Name', 'Proj 3 Description', 'https://github.com/benreeder80')
 txt4('Proj 4 Name', 'Proj 4 Description', 'https://github.com/benreeder80')
 txt4('Proj 5 Name', 'Proj 5 Description', 'https://github.com/benreeder80')
+
+
+st.markdown ('''
+## Upwork Proposal Automation
+''')
+
+# Your Loom video ID
+video_id = "c69a3fdcbe7c4ed7973fc2beebe3bc9e"
+
+# Loom Embed iframe
+embed_code = f"""
+<iframe src="https://www.loom.com/embed/{video_id}" 
+        frameborder="0" 
+        webkitallowfullscreen 
+        mozallowfullscreen 
+        allowfullscreen 
+        width="700" 
+        height="400">
+</iframe>
+"""
+
+# Display in Streamlit
+st.markdown(embed_code, unsafe_allow_html=True)
+
+
+#st.title("Embedded Power BI Report in Streamlit")
+
+# Your Power BI report URL
+#power_bi_report_url = "https://app.powerbi.com/view?r=8a494028-b171-4480-b2bd-55b594bfc162"
+
+# Embed Power BI in an iframe
+#embed_code = f"""
+#<iframe title="Power BI Report"
+ #       width="900" height="600"
+  #      src="{power_bi_report_url}"
+   #     frameborder="0" 
+    #    allowFullScreen="true">
+#</iframe>
+#"""
+
+# Display in Streamlit
+#st.markdown(embed_code, unsafe_allow_html=True)
 
 
 
